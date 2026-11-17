@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f0e7">
+  <title>一份只属于你的浪漫 · A little surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="rose" viewBox="0 0 180 250">
+ <path d="M92 105Q78 164 104 246M90 158Q38 154 37 121Q76 120 90 158M92 194Q139 174 148 147Q108 147 92 194" fill="#71806a" stroke="#5e6b58" stroke-width="1.5"/>
+ <path d="M46 133L85 154M104 183L137 157" fill="none" stroke="#a9af8a"/>
+ <path d="M90 118C57 123 33 93 42 67C30 39 57 23 76 28C93 7 122 22 127 38C155 42 155 71 143 85C140 114 111 127 90 118Z" fill="#b96c78" stroke="#9e5361" stroke-width="1.4"/>
+ <path d="M46 68Q58 35 90 47Q113 16 127 42Q150 68 119 85Q127 116 93 118Q63 113 61 91Q38 91 46 68" fill="#d899a0" stroke="#ab5f6d" stroke-width="1.5"/>
+ <path d="M66 48Q93 37 111 58Q137 57 126 82Q115 106 90 99Q64 109 60 83Q52 63 66 48Z" fill="#c67e8a" stroke="#a95c69" stroke-width="1.4"/>
+ <path d="M71 60Q90 49 107 66Q124 80 104 94Q80 105 69 82Q61 68 82 64Q102 59 106 77Q100 93 85 82Q78 69 95 72" fill="#db9ca3" stroke="#a35a68" stroke-width="2"/>
+ <path d="M45 69Q54 79 60 83M76 29Q72 41 77 47M128 40L119 58M143 85L127 82M93 118L91 100" fill="none" stroke="#f2c8c8" stroke-width="2" opacity=".6"/>
+</symbol>
+<symbol id="sprig" viewBox="0 0 100 250"><g fill="#829074" stroke="#6e7b62" stroke-width="1"><path d="M44 245Q56 116 41 15" fill="none" stroke-width="2"/><path d="M46 65Q16 63 17 31Q43 33 46 65M47 100Q75 79 78 49Q46 59 47 100M49 139Q19 133 17 104Q43 104 49 139M49 177Q83 152 81 124Q51 132 49 177M46 208Q17 193 15 164Q44 169 46 208"/></g></symbol>
+</defs></svg>
+<div class="petals" id="petals" aria-hidden="true"></div>
+<div class="site-wrap">
+ <header class="header">
+  <a class="brand" href="#" aria-label="回到首页"><span class="brand-mark">d<span>♡</span></span><span>DEAREST<small>写给最特别的你</small></span></a>
+  <span class="header-note">A LITTLE SURPRISE, JUST FOR YOU</span>
+  <button class="music-button" id="musicButton" aria-pressed="false" aria-label="音乐：林俊杰《冻结》，点击选择音频"><span class="music-icon">♫</span><span>冻结 <small>· 林俊杰</small></span><span class="music-status" id="musicStatus">未载入</span></button>
+ </header>
+ <main>
+  <section class="hero" aria-labelledby="heroTitle">
+   <div class="hero-copy">
+    <p class="eyebrow"><span></span> SOME THINGS ARE ONLY FOR YOU</p>
+    <h1 id="heroTitle">今天的浪漫，<br>只与<span class="rose-text">你</span>有关<span class="title-dot">。</span></h1>
+    <p class="hero-description">世界很大，喜欢很小。<br>小到我的眼里，刚好只有你。</p>
+    <button class="primary" id="openLetter">拆开这份小心意 <span>↗</span></button>
+    <p class="button-note">一封信，一份礼物，还有藏不住的喜欢。</p>
+    <div class="hero-signature"><span class="tiny-flower">✳</span> FOR <span>【她的昵称】</span> <span class="signature-line"></span><i>With love, always.</i></div>
+   </div>
+   <div class="hero-art" aria-label="玫瑰与封蜡信封插画">
+    <div class="art-halo"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <span class="art-spark spark-one">✧</span><span class="art-spark spark-two">✧</span>
+    <span class="art-top-caption">a little letter for my favorite person</span>
+    <svg class="art-sprig sprig-one"><use href="#sprig"/></svg><svg class="art-sprig sprig-two"><use href="#sprig"/></svg>
+    <div class="letter-assembly">
+     <div class="letter-peek"><span>My dearest,</span><div></div><div></div><p>有些偏爱，只想给你。</p><small>YOURS, ALWAYS</small></div>
+     <div class="envelope"><div class="env-fold-left"></div><div class="env-fold-right"></div><div class="env-flap"></div><div class="seal"><span>♡</span></div><span class="env-note">to my one & only</span></div>
+    </div>
+    <svg class="art-rose rose-one"><use href="#rose"/></svg><svg class="art-rose rose-two"><use href="#rose"/></svg>
+    <div class="art-stamp">SENT WITH<br><strong>love</strong><br>SEALED WITH A KISS</div>
+    <p class="art-bottom-caption">把心动写进信里，把偏爱藏进礼物里。</p>
+   </div>
+  </section>
+  <div class="chapter-bar"><span>01 <b>一封情书</b></span><i>············</i><span id="stepGift">02 <b>一份惊喜</b></span><i>············</i><span id="stepClaim">03 <b>一点偏爱</b></span><span class="chapter-end">MADE WITH ♡, ONLY FOR YOU</span></div>
+  <section class="letter-section story-section" id="letterSection" hidden aria-labelledby="letterTitle">
+   <div class="section-heading"><p class="eyebrow">CHAPTER 01 · THE LETTER</p><h2 id="letterTitle">有些话，想慢慢说给你听。</h2><p>平凡日子里的喜欢，也值得被认真收藏。</p></div>
+   <article class="letter-paper"><span class="paper-corner">♡</span><p class="salutation">亲爱的【她的昵称】：</p><p>准备这份礼物的时候，我偷偷想象了很多次，<br class="desktop-break">你打开它时，会是什么表情。</p><p>也许会笑，也许会说一句“怎么突然送我礼物”。<br>其实没有那么多理由，只是刚好看到漂亮的东西，<br>第一个想到的人，就是你。</p><p>想把普通的一天，变成你记得的小小瞬间。<br>也想认真告诉你：被我喜欢的你，<br>值得每一份用心，和每一次不期而遇的惊喜。</p><p class="letter-emphasis">今天的这份偏爱，请你收好。</p><div class="letter-sign"><span>一直喜欢你的</span><strong>【你的落款】</strong><i>With all my heart.</i></div></article>
+   <button class="primary" id="toGift">还有一份礼物，想亲手交给你 <span>↓</span></button>
+  </section>
+  <section class="gift-section story-section" id="giftSection" hidden aria-labelledby="giftTitle">
+   <div class="section-heading"><p class="eyebrow">CHAPTER 02 · THE SURPRISE</p><h2 id="giftTitle">把喜欢，打了一个蝴蝶结。</h2><p id="giftHint">轻轻碰一下礼盒，拆开属于你的惊喜。</p></div>
+   <button class="gift-stage" id="giftBox" aria-label="拆开礼盒"><span class="gift-glow"></span><span class="gift-shadow"></span><span class="gift-body"><span class="gift-body-ribbon"></span><span class="gift-brand">JUST FOR YOU<small>with a little extra love</small></span></span><span class="gift-lid"><span class="lid-ribbon"></span><span class="bow bow-left"></span><span class="bow bow-right"></span><span class="bow-knot"></span></span><span class="gift-touch">点击，收获一份心动 <span>✧</span></span></button>
+   <div id="giftReveal" class="gift-reveal" hidden><div class="product-frame"><button class="product-image-button" id="viewImage" aria-label="放大查看礼物清单"><img src="assets/gift.jpg" alt="花知晓玫瑰甜露礼盒参考图，包含彩妆、镜子及配件" loading="lazy"><span>查看礼物清单 ↗</span></button></div><div class="product-copy"><p class="eyebrow">A GIFT CHOSEN WITH LOVE</p><h3>花知晓 · 玫瑰甜露</h3><p>把一座小小的玫瑰花园，<br>送给让我心动的你。</p><p class="product-note">礼盒款式参考你提供的图片<br>【具体商品与规格待填写】</p><button class="primary" id="toClaim">收下我的小心意 <span>♡</span></button></div></div>
+  </section>
+  <section class="claim-section story-section" id="claimSection" hidden aria-labelledby="claimTitle"><div class="section-heading"><p class="eyebrow">CHAPTER 03 · ONLY YOURS</p><h2 id="claimTitle">你的专属礼物，已装满心意。</h2><p>这一份喜欢，现在交到你手上。</p></div><div class="claim-card"><div class="claim-card-top"><span>YOUR LITTLE GIFT</span><span>♡</span></div><p class="recipient">TO: 【她的昵称】</p><h3>一张写满偏爱的领取卡</h3><div class="claim-field"><span>淘宝礼物链接</span><code id="giftLink">【淘宝真实链接】</code><button class="text-button" id="visitGift">查看礼物 ↗</button></div><div class="claim-field"><span>专属兑换码</span><code id="giftCode">【兑换码】</code><button class="text-button" data-copy="giftCode">复制</button></div><div class="claim-field"><span>淘宝淘口令</span><code id="taobaoToken">【淘口令】</code><button class="text-button" data-copy="taobaoToken">复制</button></div><p class="claim-help">【领取说明与有效期】<br>替换为真实信息后，按商家说明使用兑换码；淘口令复制后可打开淘宝。</p><div class="preview-label">样稿预览 · 链接与领取信息均为占位符</div><button class="primary receive" id="receiveGift">这份惊喜，我收到了 <span>♡</span></button><div class="received-message" id="receivedMessage" hidden><span>♡</span><h3>礼物负责漂亮，</h3><h3>我负责一直喜欢你。</h3><p>愿你的每一天，都有被偏爱的底气。</p></div></div><button class="replay" id="replay">↺ 把心动，再重温一次</button></section>
+  <section class="closing"><span>♡</span><p>你是我平凡日子里，最温柔的例外。</p><i>Every little thing, with you in mind.</i></section>
+ </main>
+ <footer><span>DEAREST · 一份只属于你的浪漫</span><span>FROM 【你的落款】, WITH LOVE.</span></footer>
+</div>
+<dialog id="imageDialog"><button class="dialog-close" id="closeImage" aria-label="关闭礼物图片">×</button><img src="assets/gift.jpg" alt="完整礼物参考清单"></dialog>
+<dialog id="musicDialog"><button class="dialog-close" id="closeMusic" aria-label="关闭音乐设置">×</button><p class="eyebrow">OUR BACKGROUND MUSIC</p><h2>冻结</h2><p class="music-artist">林俊杰</p><p>让熟悉的旋律，陪你慢慢拆开这份心意。</p><p class="audio-note">本预览未附带歌曲音源。可选择你有权使用的音频文件，仅在本机播放，不会上传。</p><label class="primary audio-picker">选择《冻结》音频文件<input id="audioFile" type="file" accept="audio/*"></label><p class="music-file-name" id="audioFileName"></p></dialog>
+<audio id="backgroundMusic" loop preload="none"></audio><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
